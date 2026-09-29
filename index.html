@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R6 Slot Machine</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container wide">
+        <!-- Header -->
+        <h1>Tomasz Klęczenie Tęcza Sześć Oblężenie Gambling</h1>
+
+        <!-- Side selection buttons -->
+        <div class="side-toggle">
+            <button class="btn-side active" onclick="setSide('atk', this)">Atak</button>
+            <button class="btn-side" onclick="setSide('def', this)">Obrona</button>
+        </div>
+
+        <!-- Volume control -->
+        <div class="volume-control" onclick="toggleVolumeLevel()" title="Kliknij, aby zmienić głośność">
+            <div class="volume-icon">🔊</div>
+            <div class="volume-bars level-2">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+
+        <!-- Slot machine reels -->
+        <div class="slots-machine">
+            <div class="slot" id="slot-0">
+                <div class="slot-window">
+                    <div class="reel" id="reel-0">
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slot" id="slot-1">
+                <div class="slot-window">
+                    <div class="reel" id="reel-1">
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="slot" id="slot-2">
+                <div class="slot-window">
+                    <div class="reel" id="reel-2">
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                        <div class="reel-item"><img class="reel-icon" src="./Icons/R6.png" alt="Icon"><div class="reel-name">?</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Spin control -->
+        <button class="roll-button" onclick="rollOperator()">ZAKRĘĆ</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
